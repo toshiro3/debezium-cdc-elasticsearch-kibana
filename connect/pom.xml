@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.example</groupId>
+    <artifactId>kafka-connect-deps</artifactId>
+    <version>1.0.0</version>
+    <packaging>pom</packaging>
+
+    <dependencies>
+        <!-- Elasticsearch Sink Connector -->
+        <dependency>
+            <groupId>io.confluent</groupId>
+            <artifactId>kafka-connect-elasticsearch</artifactId>
+            <version>15.0.0</version>
+        </dependency>
+        <!-- JDBC Sink Connector -->
+        <dependency>
+            <groupId>io.confluent</groupId>
+            <artifactId>kafka-connect-jdbc</artifactId>
+            <version>10.7.4</version>
+        </dependency>
+        <!-- PostgreSQL JDBC Driver -->
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>42.7.1</version>
+        </dependency>
+    </dependencies>
+
+    <repositories>
+        <repository>
+            <id>confluent</id>
+            <url>https://packages.confluent.io/maven/</url>
+        </repository>
+    </repositories>
+</project>
